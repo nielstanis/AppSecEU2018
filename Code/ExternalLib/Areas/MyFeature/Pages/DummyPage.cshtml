@@ -1,0 +1,17 @@
+﻿@page
+@model ExternalLib.MyFeature.Pages.DummyPageModel
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DummyPage</title>
+</head>
+<body>
+    <h1>Loaded from: @this.GetType().AssemblyQualifiedName</h1>
+</body>
+</html>

@@ -1,0 +1,11 @@
+﻿@page
+@model MVCApp.Pages.AvailablePagesModel
+@{
+    ViewData["Title"] = "AvailablePages";
+}
+
+<h2>AvailablePages</h2>
+@foreach (var item in Model.Items)
+{
+    <li>@item.Identifier - @item.Kind</li>
+}
